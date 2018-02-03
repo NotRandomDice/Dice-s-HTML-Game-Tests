@@ -34,12 +34,15 @@ var myGamePiece;
 var myObstacles = [];
 var myScore;
 var mySound;
+var myMusic;
 
 function startGame() {
     myGamePiece = new component(30, 30, "red", 10, 120);
     myScore = new component("30px", "Consolas", "black", 280, 40, "text");
     myGameArea.start();
 	mySound = new sound("sound/dunk.mp3");
+	myMusic = new sound("sound/gametheme.ogg");
+    myMusic.play();
 }
 
 var myGameArea = {
@@ -129,6 +132,7 @@ function updateGameArea() {
     for (i = 0; i < myObstacles.length; i += 1) {
         if (myGamePiece.crashWith(myObstacles[i])) {
 			mySound.play();
+			myMusic.stop();
             myGameArea.stop();
             return;
         } 
