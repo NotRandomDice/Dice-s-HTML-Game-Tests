@@ -9,6 +9,10 @@ Thats what I'm asking
 
 Go to
 
-https://notrandomdice.github.io/Dice-s-HTML-Game-Tests/<GAMENAMEHERE>
+https://notrandomdice.github.io/switchgametest/ {GAMENAMEHERE}
+
+or
+  
+http://bit.ly/2nCqhX2 
   
 To play the game!
